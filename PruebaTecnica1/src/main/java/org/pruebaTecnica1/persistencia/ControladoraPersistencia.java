@@ -47,4 +47,8 @@ public class ControladoraPersistencia {
         return empleadosCargo;
     }
 
+    public Empleado getEmpleadoById(Long id){
+        return empleadoJPA.findEmpleado(id);
+    }
+
 }

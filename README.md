@@ -137,3 +137,37 @@ public void deleteEmpleado(Long id) {
 
 ```
 
+## Creando aplicación de consola en Main
+
+Para probar la aplicación, crearé una aplicación de consola en la clase Main, donde crearemos un objeto de la clase `ControladoraPersistencia`.
+No voy a realizar ninguna excepción ya que mi nivel de Java es básico y no he llegado a ver como se realizan.
+Usaré bucles para que el usuario pueda realizar las operaciones CRUD de la aplicación.
+
+En una lista defino las opciones y comienzo el bucle while y switch para realizar las operaciones. 
+
+Para la primera opción, añadir un empleado, pido al usuario que introduzca los datos del empleado y llamo al método `createEmpleado` de la clase `ControladoraPersistencia`.
+
+![alt text](image-9.png)
+
+Para la segunda opción, listar empleados, llamo al método `getAllEmpleados` de la clase `ControladoraPersistencia` y muestro los empleados por pantalla.
+
+![alt text](image-10.png)
+
+Para la tercera opción, he creado una funcion en la clase `ControladoraPersistencia` que busca empleados por id, para poder seleccionar primero el empleado que queremos modificar y luego modificarlo.
+
+![alt text](image-11.png)
+
+Una vez sabemos que empleado queremos modificar, he creado una nueva lista de opciones de edición:
+
+![alt text](image-12.png)
+
+Y dependiendo de la opción que elija el usuario, se modificará el empleado en dicha opción.
+
+![alt text](image-13.png)
+
+Para la cuarta opción, eliminar un empleado, pido al usuario que introduzca el id del empleado que quiere eliminar, luego confirmamos si es el usuario que quiere eliminar y llamo al método `deleteEmpleado` de la clase `ControladoraPersistencia`.
+![alt text](image-14.png)
+
+Finalmente, para la quinta opción, buscar empleados por cargo, pido al usuario que introduzca el cargo del empleado que quiere buscar, si existe ese cargo, llamo al método `getEmpleadoByCargo` de la clase `ControladoraPersistencia` y muestro los empleados por pantalla.
+
+![alt text](image-15.png)
