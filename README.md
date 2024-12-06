@@ -64,9 +64,8 @@ Tras terminar con la clase Empleado debemos añadir en el archivo `persistence.x
 
 ## 👩‍💻 Creando la clase EmpleadoJpaController 
 
-Esta clase será la encargada de realizar las operaciones CRUD en la base de datos, para ello debemos crear una serie de métodos que nos permitan realizar estas operaciones. Es basicamente una clase DAO que la creare en el paquete `persistencia`.
-
-En clase el profesor nos a proporcionado clases ejemplo de como deberia ser esta clase, por lo que la creare siguiendo el ejemplo del profesor.
+Esta clase será la encargada de realizar las operaciones CRUD en la base de datos, para ello debemos crear una serie de métodos que nos permitan realizar estas operaciones.
+En clase el profesor nos a proporcionado ejemplo de como deberia ser esta clase, por lo que la creare siguiendo el ejemplo del profesor.
 A pesar de no indagar mucho en el funcionamiento de esta clase, he intentado entenderla y adaptarla a mi proyecto.
 
 
@@ -143,7 +142,7 @@ Para probar la aplicación, crearé una aplicación de consola en la clase Main,
 No voy a realizar ninguna excepción ya que mi nivel de Java es básico y no he llegado a ver como se realizan.
 Usaré bucles para que el usuario pueda realizar las operaciones CRUD de la aplicación.
 
-En una lista defino las opciones y comienzo el bucle while y switch para realizar las operaciones. 
+En una lista defino las opciones y comienzo el bucle while y un switch para realizar las operaciones. 
 
 Para la primera opción, añadir un empleado, pido al usuario que introduzca los datos del empleado y llamo al método `createEmpleado` de la clase `ControladoraPersistencia`.
 
